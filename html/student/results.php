@@ -93,6 +93,10 @@ foreach ($answers as $answer) {
             </div>
           </div>
 
+          <small class="d-block text-right mt-3">
+              <a href="#">Show Result</a>  <!-- Need to create html table that shows result  -->
+            </small>
+
 
           <div class="col-6 my-3 p-3 bg-white rounded shadow-sm">
             <h6 class="border-bottom border-gray pb-2 mb-0">Quiz list</h6>

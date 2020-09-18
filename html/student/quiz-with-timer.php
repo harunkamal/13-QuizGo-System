@@ -146,7 +146,7 @@ $timer = "10000"; // Changed Timeframe
 
 
 
-          }, 1000);
+          }, 10000);
 
 
         </script>
