@@ -9,7 +9,7 @@ date_default_timezone_set("Asia/Kuala_Lumpur");
 
 
 $modify_quizes = read("quiz");
-$timer = "1000";
+$timer = "10000"; // Changed Timeframe 
 
   $id = 14;
   foreach ($modify_quizes as $modify_quize) {
@@ -73,7 +73,7 @@ $timer = "1000";
         <div class="col-md-auto order-md-1">
 
           <input id="timerInput2" type="time" name="" value="<?php echo $mquiz[5] ?>">
-          <h1 id="textfield">fdbdfgdfgdfgfdg</h1>
+          <h1 id="textfield">Timer Start</h1>
           <output id="timer" name="timer">00:00:00</output>
 
 
