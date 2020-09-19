@@ -26,7 +26,7 @@ if(isset($_GET['id'])){
     if($modify_quize[0] == $_GET['id']){
       $mquiz = $modify_quize;
     }
-  }
+  } 
 
   $modify_questions = readQuizQuestions($mquiz[0]);
 
