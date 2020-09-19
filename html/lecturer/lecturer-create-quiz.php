@@ -39,7 +39,7 @@ if(isset($_GET['id'])){
 
   <head>
 
-    <!-- DON'T touch, should be in all files -->
+
     <?php include '../general/bootstrapMagic.php' ?>
 
     <!-- Custom styles for this page -->
@@ -70,7 +70,7 @@ if(isset($_GET['id'])){
 
 
         <div class="col-md-auto order-md-1">
-
+        /////////Menon
 
               <!-- numbOfQuestions form -->
               <form class="" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post" >
