@@ -26,7 +26,7 @@ if(isset($_GET['id'])){
     if($modify_quize[0] == $_GET['id']){
       $mquiz = $modify_quize;
     }
-  }
+  } 
 
   $modify_questions = readQuizQuestions($mquiz[0]);
 
@@ -242,6 +242,8 @@ echo "<br>";
 
               <button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" id="build" >Update Quiz</button>
             </form>
+                <button type="button">Update History</button>
+
 
         </div>
 

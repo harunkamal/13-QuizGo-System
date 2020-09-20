@@ -39,7 +39,7 @@ if(isset($_GET['id'])){
 
   <head>
 
-    <!-- DON'T touch, should be in all files -->
+
     <?php include '../general/bootstrapMagic.php' ?>
 
     <!-- Custom styles for this page -->
@@ -87,21 +87,51 @@ if(isset($_GET['id'])){
                             myDiv.appendChild(selectList);
 
                             //Create and append the options
-                            for (var i = 0; i < 50; i++) {
+                            for (var i = 0; i < 51; i++) {
                                 var option = document.createElement("option");
                                 option.text = i;
                                 selectList.appendChild(option);
                             }
 
                           </script>
-
-                        <div class="invalid-feedback">
+                      <div class="invalid-feedback">
                         </div>
                       </div>
                     </div>
                       <input type="hidden" id="quizid" name="userID" value="<?php echo $currentUser[0] ?>">
 
                       <button class="btn btn-primary btn-lg btn-block" type="submit" name="addQuestions" id="createQuestions">set number of questions</button>
+                  </form>
+
+              <!-- numbOfStudent form -->
+              <form class="" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post" >
+                    <div class="row">
+                      <div class="col-md-4 mb-3" id="numbOfStudent">
+                        <label class="font-weight-bold col-12 p-0" for="Title" style="font-size: 1.4em;">Number of students</label>
+
+                          <script>
+                            var myDiv = document.getElementById("numbOfStudent");
+
+                            //Create and append select list
+                            var selectList = document.createElement("select");
+                            selectList.setAttribute("name", "mySelect");
+                            myDiv.appendChild(selectList);
+
+                            //Create and append the options
+                            for (var i = 0; i < 81; i++) {
+                                var option = document.createElement("option");
+                                option.text = i;
+                                selectList.appendChild(option);
+                            }
+
+                          </script>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    </div>
+                      <input type="hidden" id="quizid" name="userID" value="<?php echo $currentUser[0] ?>">
+
+                      <button class="btn btn-primary btn-lg btn-block" type="submit" name="addStudents" id="createStudents">set number of students</button>
                   </form>
 
 
