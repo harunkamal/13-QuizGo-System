@@ -242,6 +242,8 @@ echo "<br>";
 
               <button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" id="build" >Update Quiz</button>
             </form>
+                <button type="button">Update History</button>
+
 
         </div>
 
