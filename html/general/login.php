@@ -64,7 +64,7 @@ if(isset($_GET['error'])==true){
     if(<?php echo $ERROR ?>){
       // email.style.backgroundColor = "red";
       // password.style.backgroundColor = "red";
-      // Lines above commented due to unfriendy user interface
+      // Lines above commented due to unfriendly user interface
       document.getElementById("errorCheck").innerHTML="Email and Password do not match";
     }
   </script>
