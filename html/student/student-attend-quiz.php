@@ -145,7 +145,7 @@ echo "<br>";
                 <input type="hidden" id="chosenNumOfQuestions" name="chosenNumOfQuestions" value="<?php echo $mquiz[6] ?>">
                 <input type="hidden" id="id" name="id" value="<?php echo $mquiz[0] ?>">
                 <div class="col-12 text-center">
-                  <h3>Please answer the following questions!</h3>
+                  <h3>Please read and answer the following questions! </h3>
                 </div>
 
                 <hr class="mb-4">

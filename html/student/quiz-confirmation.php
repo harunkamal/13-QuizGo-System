@@ -108,7 +108,7 @@ if(!isset($canAttend)){
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
                 <button type="button" class="btn btn-lg btn-danger" id="attendBtn" onclick="evaluateQuiz()">
-                  Attend Quiz</button>
+                  Attend Quiz Now</button>
               </div>
             </div>
           </div>
