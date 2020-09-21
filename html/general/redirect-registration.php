@@ -5,7 +5,6 @@ require_once('../../DB/dbFunctions.php');
 
 $quizes = read("quiz");
 
-
 //Creating quiz logic
 
 if(isset($_POST['Submit'])){
@@ -13,12 +12,7 @@ if(isset($_POST['Submit'])){
   insertUser(getUserValuesArray());
 }
 
-
 ?>
-
-
-
-
 
 <html lang="en">
 
@@ -31,28 +25,21 @@ if(isset($_POST['Submit'])){
     <meta http-equiv="refresh" content="3;url=login.php">
     <style>
 
-
       body{
 
         background-image: url("../../resources/hola.Gif");
 
-
-
       }
-
 
     </style>
 
   </head>
 
-
   <body>
-
 
     <div class="container-fluid">
 
       <div class="row">
-
 
         <!-- Start Editing page from here -->
 
