@@ -32,7 +32,7 @@
 
       <button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" id="register" >Register</button>
 
-</form>
+    </form>
 
 <script type="text/javascript">
   var password = document.getElementById("inputPassword");
