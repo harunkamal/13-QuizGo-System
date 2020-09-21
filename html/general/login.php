@@ -1,13 +1,11 @@
 <?php
 
 $ERROR = "0";
-if(isset($_GET['error'])){
+if(isset($_GET['error'])==true){
   $ERROR = TRUE;
 }
 
  ?>
-
-
 
 <!DOCTYPE html>
 <html lang ="en">
@@ -17,7 +15,6 @@ if(isset($_GET['error'])){
 
    <title>Login</title>
    <link rel="stylesheet" href="../../css/login.css">
-
 
 </head>
 <body>
@@ -29,7 +26,6 @@ if(isset($_GET['error'])){
 
       </p>
 
-
     <nav>
       <ul style="font-weight: bold;">
         <li><a href = "about.html">About</a></li>
@@ -38,27 +34,25 @@ if(isset($_GET['error'])){
     </nav>
   </header>
 
-
 	<main class="login-box">
     <h1>Login</h1>
 
     <form class="form-signin" method="POST" action="redirect-login.php">
       <div class="textbox">
         <i class="fas fa-user"></i>
-        <input type="text" placeholder="email" name="email" id="email">
+        <input type="text" placeholder="Email" name="email" id="email">
       </div>
 
       <div class="textbox">
         <i class="fas fa-lock"></i>
         <input type="password" placeholder="Password" name="password" id="password">
       </div>
-
-
+      
+      <font color="FF0000"><p align="center" id="errorCheck"></p>
 
       <button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" id="register" >Login</button>
       <input type="button" class="btn" value="Register" onclick="window.location.href = 'registration.php';">
     </form>
-
 
     <a href = "forgot-password.php">Forgot password?</a>
 
@@ -68,12 +62,12 @@ if(isset($_GET['error'])){
     var email = document.getElementById('email');
     var password= document.getElementById('password');
     if(<?php echo $ERROR ?>){
-      email.style.backgroundColor = "red";
-      password.style.backgroundColor = "red";
+      // email.style.backgroundColor = "red";
+      // password.style.backgroundColor = "red";
+      // Lines above commented due to unfriendy user interface
+      document.getElementById("errorCheck").innerHTML="Email and Password do not match";
     }
   </script>
 </body>
-
-//Harun Branch Test
 
 </html>

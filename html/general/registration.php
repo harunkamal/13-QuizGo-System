@@ -7,8 +7,6 @@
     <link href="../../css/registration.css" rel="stylesheet">
   </head>
 
-
-
   <body class="text-center">
     <form class="form-signin" method="post" action="redirect-registration.php">
     <!-- <form class="form-signin" method="post" action="http://www.randyconnolly.com/tests/process.php"> -->
@@ -18,14 +16,14 @@
 
       <input type="text" class="form-control mb-2" id="validationCustom02" name="last" placeholder="Last name" value="" required>
 
-      <input type="email" pattern ="[a-z]+@[a-z]+.[a-z]+.[a-z]$"] id="inputEmail" class="form-control mb-2" name="email" placeholder="MMU Email address" required="" autofocus=""  title="Email must be an MMU email id@mmu.edu.my">
-      <!--  pattern=" [0-9]+@[a-z.]+\.[a-z]{2,4}$" -->
-
-
+      <input type="email" pattern ="[0-9]+@+(student.mmu.edu.my)" id="inputEmail" class="form-control mb-2" name="email" placeholder="MMU Email address" required="" autofocus=""  title="Email must be an MMU email id@mmu.edu.my">
+     
       <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required="">
 
       <input type="password" id="inputRePassword" class="form-control" name="repassword" placeholder="Re-enter Password" required="">
+      
       <label for="exampleFormControlSelect1">Select user type</label>
+      
       <select class="form-control" id="exampleFormControlSelect1" name="type">
         <option>Lecturer</option>
         <option>Student</option>
