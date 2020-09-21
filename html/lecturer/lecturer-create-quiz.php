@@ -1,5 +1,4 @@
 
-
 <?php
 
 require_once('../../DB/connection.php');
@@ -9,31 +8,16 @@ $quizes = read("quiz");
 
 $users = read("user");
 
-
 if(isset($_GET['id'])){
   foreach ($users as $user) {
     if($user[0] == $_GET['id']){
       $currentUser = $user;
     }
   }
-
 }
-
-// if(isset($_POST['userID'])){
-//   foreach ($users as $user) {
-//     if($user[0] == $_GET['id']){
-//       $currentUser = $user;
-//     }
-//   }
-//
-// }
 
 
 ?>
-
-
-
-
 
 <html lang="en">
 
@@ -45,7 +29,6 @@ if(isset($_GET['id'])){
     <!-- Custom styles for this page -->
     <link href="../../css/home.css" rel="stylesheet">
   </head>
-
 
   <body>
 
@@ -68,11 +51,38 @@ if(isset($_GET['id'])){
             </div>
           </div>
 
-
         <div class="col-md-auto order-md-1">
 
+              <!-- numbOfQuestions form -->
+              <form class="" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post" >
+                <div class="row">
+                  <div class="col-md-4 mb-3" id="numbOfQuestions">
+                    <label class="font-weight-bold col-12 p-0" for="Title" style="font-size: 1.4em;">Number of questions</label>
 
+                      <script>
+                        var myDiv = document.getElementById("numbOfQuestions");
 
+                        var selectList = document.createElement("select");
+                        selectList.setAttribute("name", "mySelect");
+                        myDiv.appendChild(selectList);
+                        //To create and append the select list
+
+                        for (var i = 0; i < 51; i++) {
+                            var option = document.createElement("option");
+                            option.text = i;
+                            selectList.appendChild(option);
+                        }
+                        //To create and append the select options
+
+                      </script>
+                  <div class="invalid-feedback">
+                    </div>
+                  </div>
+                </div>
+                  <input type="hidden" id="quizid" name="userID" value="<?php echo $currentUser[0] ?>">
+
+                  <button class="btn btn-primary btn-lg btn-block" type="submit" name="addQuestions" id="createQuestions">set number of questions</button>
+              </form>
 
               <!-- numbOfStudent form -->
               <form class="" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post" >
